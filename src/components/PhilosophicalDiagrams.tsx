@@ -144,9 +144,7 @@ export default function PhilosophicalDiagrams() {
               className="w-full h-32 object-cover grayscale-[0.4] group-hover:grayscale-0 transition-all duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#2A2420]/70 to-transparent flex items-end p-2">
-              <span className="text-[9px] text-[#FAF7F0] font-mono uppercase tracking-widest italic opacity-85">
-                Biểu tượng Công lý & Ánh sáng tri thức
-              </span>
+              
             </div>
           </div>
         </div>
