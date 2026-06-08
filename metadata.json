@@ -1,0 +1,6 @@
+{
+  "name": "Triết Học & Tự Do Ngôn Luận",
+  "description": "Một giao diện mang phong cách triết học cổ điển, lưu trữ và tương tác với các nội dung lý luận về dân chủ và tự do ngôn luận trên không gian mạng.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
