@@ -5,6 +5,8 @@ import ManuscriptReader from "./components/ManuscriptReader";
 import PhilosophicalDiagrams from "./components/PhilosophicalDiagrams";
 import QuizReview from "./components/QuizReview";
 import SocraticDiary from "./components/SocraticDiary";
+// @ts-ignore
+import athensAcademyImg from "./assets/images/athens_academy_1780908307906.png";
 
 type ActiveTab = "library" | "diagrams" | "quiz" | "diary";
 
@@ -131,18 +133,7 @@ export default function App() {
               <span>3. KIỂM TRA NHẬN THỨC</span>
             </button>
 
-            <button
-              onClick={() => setActiveTab("diary")}
-              id="tab-btn-diary"
-              className={`flex items-center justify-center space-x-2 px-3 md:px-5 py-2.5 rounded-sm text-[11px] md:text-xs font-mono tracking-wider transition-all uppercase cursor-pointer ${
-                activeTab === "diary"
-                  ? "bg-[#2A2420] text-[#F2ECE4] font-bold shadow-md"
-                  : "text-[#2A2420] hover:bg-[#D1C7B7]/40 hover:italic"
-              }`}
-            >
-              <PenTool className="w-3.5 h-3.5" />
-              <span>4. NHẬT KÝ CÔNG DÂN SỐ</span>
-            </button>
+           
           </nav>
         </div>
 
