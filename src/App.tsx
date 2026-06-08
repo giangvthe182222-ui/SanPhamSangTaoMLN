@@ -5,8 +5,6 @@ import ManuscriptReader from "./components/ManuscriptReader";
 import PhilosophicalDiagrams from "./components/PhilosophicalDiagrams";
 import QuizReview from "./components/QuizReview";
 import SocraticDiary from "./components/SocraticDiary";
-// @ts-ignore
-import athensAcademyImg from "./assets/images/athens_academy_1780908307906.png";
 
 type ActiveTab = "library" | "diagrams" | "quiz" | "diary";
 
@@ -67,21 +65,7 @@ export default function App() {
             </div>
           </div>
         </header>
-{/* Artistic Woodcut Scholar's Banner */}
-        <div className="border border-[#A69076]/45 p-1 bg-[#FAF7F0] rounded-sm shadow-xs overflow-hidden relative">
-          <div className="relative h-28 md:h-36 w-full overflow-hidden">
-            <img 
-              src={athensAcademyImg} 
-              alt="The School of Athens - Ancient Philosophy meeting modern communication" 
-              className="w-full h-full object-cover filter grayscale contrast-125 opacity-75 mix-blend-multiply"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#FAF7F0]/30 to-transparent"></div>
-          </div>
-          <div className="absolute bottom-2 left-4 text-[9px] font-mono uppercase tracking-[0.2em] text-[#2A2420] bg-[#FAF7F0] px-2.5 py-0.5 border border-[#A69076]/45 rounded-sm shadow-xs font-bold">
-            Hiến định Học đường &bull; Khảo cứu Biện chứng Dân chủ số
-          </div>
-        </div>
+
         {/* Dispatch Scroll (Philosophical dynamic banner note) */}
         <AnimatePresence>
           {notification && (
@@ -147,7 +131,18 @@ export default function App() {
               <span>3. KIỂM TRA NHẬN THỨC</span>
             </button>
 
-           
+            <button
+              onClick={() => setActiveTab("diary")}
+              id="tab-btn-diary"
+              className={`flex items-center justify-center space-x-2 px-3 md:px-5 py-2.5 rounded-sm text-[11px] md:text-xs font-mono tracking-wider transition-all uppercase cursor-pointer ${
+                activeTab === "diary"
+                  ? "bg-[#2A2420] text-[#F2ECE4] font-bold shadow-md"
+                  : "text-[#2A2420] hover:bg-[#D1C7B7]/40 hover:italic"
+              }`}
+            >
+              <PenTool className="w-3.5 h-3.5" />
+              <span>4. NHẬT KÝ CÔNG DÂN SỐ</span>
+            </button>
           </nav>
         </div>
 
