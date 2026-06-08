@@ -106,6 +106,8 @@ export default function ManuscriptReader({ onSelectConcept, activeId, setActiveI
                   {currentSection.example}
                 </p>
               </div>
+
+              
             </div>
 
             {/* Right Column: Main Analysis Content */}

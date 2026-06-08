@@ -80,6 +80,15 @@ export default function SocraticDiary({ onNotify }: SocraticDiaryProps) {
           🖋️
         </div>
 
+        {/* Decorative corner image */}
+        <div className="absolute -bottom-4 -right-4 w-32 h-32 opacity-10 pointer-events-none grayscale sepia ">
+          <img 
+            src="/assets/images/athens_academy_1780908307906.png" 
+            alt="Decorative Artwork" 
+            className="w-full h-full object-cover rounded-full"
+          />
+        </div>
+
         <div>
           <div className="border-b border-[#A69076]/60 pb-3 mb-5 flex items-center space-x-3">
             <Notebook className="text-[#A69076] w-6 h-6 shrink-0" />

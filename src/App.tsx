@@ -34,6 +34,15 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#F2ECE4] text-[#2A2420] flex flex-col justify-between selection:bg-[#A69076]/30 selection:text-[#2A2420] relative overflow-hidden font-serif p-3 md:p-6 border-[8px] md:border-[16px] border-[#D1C7B7] shadow-inner grain-overlay">
+      {/* Decorative Background Image - The School of Athens */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-[0.03] pointer-events-none z-0 sepia contrast-125">
+        <img 
+          src="/assets/images/athens_academy_1780908307906.png" 
+          alt="The School of Athens Decorative Backdrop" 
+          className="w-full h-full object-cover grayscale"
+        />
+      </div>
+
       {/* Absolute decorative border outlines */}
       <div className="absolute inset-4 border border-[#A69076]/45 rounded-sm pointer-events-none z-10 hidden md:block"></div>
 
@@ -41,17 +50,26 @@ export default function App() {
       <div className="max-w-6xl mx-auto w-full px-2 py-4 md:py-8 z-20 flex-grow flex flex-col space-y-6">
         
         {/* Ancient Hellenistic / Latin Title Banner in Editorial Aesthetic style */}
-        <header className="flex flex-col md:flex-row justify-between items-center md:items-end border-b border-[#A69076] pb-6 mb-2 text-[#2A2420] gap-4">
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <span className="text-[10px] uppercase tracking-[0.3em] font-sans font-bold text-[#615347] opacity-80 mb-1">
-              Philosophia Naturalis & Politica
-            </span>
-            <h1 className="text-4xl md:text-5xl font-light tracking-tighter leading-none italic font-serif">
-              Dân Chủ & Tự Do Ngôn Luận
-            </h1>
-            <p className="text-xs md:text-sm italic text-[#615347] max-w-lg mt-2 leading-relaxed">
-              Cơ sở lý luận về nền dân chủ Xã hội Chủ nghĩa và quyền tự do ngôn luận trong bối cảnh không gian mạng hiện đại.
-            </p>
+        <header className="flex flex-col md:flex-row justify-between items-center md:items-end border-b border-[#A69076] pb-6 mb-2 text-[#2A2420] gap-6 relative">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-5">
+            <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-[#A69076] shadow-xl overflow-hidden shrink-0 hidden md:block bg-stone-100 grayscale hover:grayscale-0 transition-all duration-700">
+              <img 
+                src="/assets/images/athens_academy_1780908307906.png" 
+                alt="Philosophy Icon" 
+                className="w-full h-full object-cover scale-150"
+              />
+            </div>
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+              <span className="text-[10px] uppercase tracking-[0.3em] font-sans font-bold text-[#615347] opacity-80 mb-1">
+                Philosophia Naturalis & Politica
+              </span>
+              <h1 className="text-4xl md:text-5xl font-light tracking-tighter leading-none italic font-serif">
+                Dân Chủ & Tự Do Ngôn Luận
+              </h1>
+              <p className="text-xs md:text-sm italic text-[#615347] max-w-lg mt-2 leading-relaxed">
+                Cơ sở lý luận về nền dân chủ Xã hội Chủ nghĩa và quyền tự do ngôn luận trong bối cảnh không gian mạng hiện đại.
+              </p>
+            </div>
           </div>
           <div className="text-center md:text-right shrink-0">
             <p className="text-xs uppercase tracking-widest font-sans font-black text-[#2A2420]">
@@ -131,18 +149,7 @@ export default function App() {
               <span>3. KIỂM TRA NHẬN THỨC</span>
             </button>
 
-            <button
-              onClick={() => setActiveTab("diary")}
-              id="tab-btn-diary"
-              className={`flex items-center justify-center space-x-2 px-3 md:px-5 py-2.5 rounded-sm text-[11px] md:text-xs font-mono tracking-wider transition-all uppercase cursor-pointer ${
-                activeTab === "diary"
-                  ? "bg-[#2A2420] text-[#F2ECE4] font-bold shadow-md"
-                  : "text-[#2A2420] hover:bg-[#D1C7B7]/40 hover:italic"
-              }`}
-            >
-              <PenTool className="w-3.5 h-3.5" />
-              <span>4. NHẬT KÝ CÔNG DÂN SỐ</span>
-            </button>
+            
           </nav>
         </div>
 
@@ -156,10 +163,25 @@ export default function App() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -15 }}
                 transition={{ duration: 0.3 }}
-                className="space-y-4"
+                className="space-y-6"
               >
-                {/* Embedded Scholarly Introduction Badge in Elegant Editorial cream background */}
-                
+                {/* Frontispiece - Ancient Illustration Banner */}
+                <div className="relative w-full h-32 md:h-48 overflow-hidden rounded-sm border-2 border-[#A69076]/40 group shadow-lg">
+                  <div className="absolute inset-0 bg-[#2A2420]/30 z-10 group-hover:bg-transparent transition-colors duration-500"></div>
+                  <img 
+                    src="/assets/images/athens_academy_1780908307906.png" 
+                    alt="Classical Academy" 
+                    className="w-full h-full object-cover grayscale sepia brightness-90 group-hover:grayscale-0 group-hover:sepia-0 group-hover:brightness-110 transition-all duration-1000 scale-105 group-hover:scale-100"
+                  />
+                  <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-white pointer-events-none p-4 text-center">
+                    <h2 className="text-xl md:text-3xl font-light italic tracking-[0.1em] drop-shadow-md">Bibliotheca Sapientiae</h2>
+                    <div className="h-0.5 w-24 bg-white/60 my-2"></div>
+                    <p className="text-[10px] md:text-xs uppercase tracking-[0.4em] opacity-80">Kho tàng Lý luận Dân chủ & Tự do</p>
+                  </div>
+                  {/* Decorative corner accents */}
+                  <div className="absolute top-2 left-2 w-4 h-4 border-t border-l border-white/50 z-30"></div>
+                  <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-white/50 z-30"></div>
+                </div>
 
                 <ManuscriptReader
                   onSelectConcept={handleSelectConcept}
