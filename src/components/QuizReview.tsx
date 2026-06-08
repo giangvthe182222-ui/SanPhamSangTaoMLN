@@ -511,10 +511,17 @@ export default function QuizReview() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="flex-grow flex flex-col items-center justify-center text-center py-12"
+            className="flex-grow flex flex-col items-center justify-center text-center py-6"
           >
-            <div className="p-6 bg-[#2A2420] rounded-full mb-6">
-                <Award className="w-16 h-16 text-[#A69076]" />
+            <div className="relative mb-6">
+              <div className="p-6 bg-[#2A2420] rounded-full">
+                  <Award className="w-16 h-16 text-[#A69076]" />
+              </div>
+              <img 
+                src="/assets/images/socrates_portrait_1780908325571.png" 
+                alt="Socrates Portrait" 
+                className="absolute -top-4 -right-12 w-24 h-24 object-cover rounded-full border-4 border-[#A69076] shadow-lg hidden md:block"
+              />
             </div>
             <h2 className="text-3xl font-bold italic mb-2">Hoàn thành Kiểm tra!</h2>
             <p className="text-[#615347] mb-8 uppercase tracking-widest text-sm">Điểm số nhận thức: <span className="text-[#2A2420] font-black">{score} / {QUESTIONS_DATA.length}</span></p>

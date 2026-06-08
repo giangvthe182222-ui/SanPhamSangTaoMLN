@@ -136,6 +136,19 @@ export default function PhilosophicalDiagrams() {
               "Dân chủ không phải là bệ đỡ cho hành vi tùy tiện nặc danh bộc phát. Hãy tương tác vào các nút tròn và nhánh sơ đồ bên phải để chiêm nghiệm quy luật vận động biện chứng chân thực."
             </p>
           </div>
+
+          <div className="mt-4 rounded-sm border-2 border-[#A69076]/40 overflow-hidden relative group hidden xl:block shadow-inner">
+            <img 
+              src="/assets/images/justice_and_light_1780908342960.png" 
+              alt="Justice and Light" 
+              className="w-full h-32 object-cover grayscale-[0.4] group-hover:grayscale-0 transition-all duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#2A2420]/70 to-transparent flex items-end p-2">
+              <span className="text-[9px] text-[#FAF7F0] font-mono uppercase tracking-widest italic opacity-85">
+                Biểu tượng Công lý & Ánh sáng tri thức
+              </span>
+            </div>
+          </div>
         </div>
 
         {/* RIGHT COLUMN: The Interactive Virtual Diagram View */}
