@@ -47,21 +47,21 @@ export default function App() {
               Philosophia Naturalis & Politica
             </span>
             <h1 className="text-4xl md:text-5xl font-light tracking-tighter leading-none italic font-serif">
-              Triết Học & Tự Do Ngôn Luận
+              Dân Chủ & Tự Do Ngôn Luận
             </h1>
             <p className="text-xs md:text-sm italic text-[#615347] max-w-lg mt-2 leading-relaxed">
-              Nền dân chủ Xã hội Chủ nghĩa kết hợp phân tích tương tác 10 Luận điểm diễn giải của Học giả ĐH FPT về Tự do phát ngôn trên Không gian mạng.
+              Cơ sở lý luận về nền dân chủ Xã hội Chủ nghĩa và quyền tự do ngôn luận trong bối cảnh không gian mạng hiện đại.
             </p>
           </div>
           <div className="text-center md:text-right shrink-0">
             <p className="text-xs uppercase tracking-widest font-sans font-black text-[#2A2420]">
-              VOLUME I &bull; MDCCXCI
+              TRI THỨC SỐ &bull; MMXXVI
             </p>
             <div className="flex flex-col md:flex-row md:items-center md:justify-end gap-1 text-[11px] font-mono text-[#615347] mt-1">
               <span className="bg-[#D1C7B7] text-[#2A2420] px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider inline-block">
                 CHƯƠNG IV (SXHKH)
               </span>
-              <span>FPTU ĐỒNG HÀNH</span>
+              <span>ĐẠI HỌC FPT</span>
             </div>
           </div>
         </header>
@@ -83,7 +83,7 @@ export default function App() {
                 onClick={() => setNotification(null)}
                 className="text-[10px] font-mono uppercase font-black text-[#615347] hover:text-[#2A2420] cursor-pointer ml-3 shrink-0"
               >
-                [KÍNH THƯ]
+                [ĐÓNG]
               </button>
             </motion.div>
           )}
@@ -102,7 +102,7 @@ export default function App() {
               }`}
             >
               <BookOpen className="w-3.5 h-3.5" />
-              <span>1. Thư viện</span>
+              <span>1. KHO TRI THỨC</span>
             </button>
 
             <button
@@ -115,7 +115,7 @@ export default function App() {
               }`}
             >
               <Layers className="w-3.5 h-3.5" />
-              <span>2. Sơ Đồ Học Tập</span>
+              <span>2. HỆ THỐNG LÝ LUẬN</span>
             </button>
 
             <button
@@ -128,7 +128,7 @@ export default function App() {
               }`}
             >
               <HelpCircle className="w-3.5 h-3.5" />
-              <span>3. Ôn Tập Quốc Gia</span>
+              <span>3. KIỂM TRA NHẬN THỨC</span>
             </button>
 
             <button
@@ -141,7 +141,7 @@ export default function App() {
               }`}
             >
               <PenTool className="w-3.5 h-3.5" />
-              <span>4. Sổ Suy Ngẫm</span>
+              <span>4. NHẬT KÝ CÔNG DÂN SỐ</span>
             </button>
           </nav>
         </div>
