@@ -24,48 +24,36 @@ interface SlideData {
 }
 
 const SLIDES_LIST: SlideData[] = [
-  {
-    id: 1,
-    title: "Triết Học và Vấn Đề Cơ Bản",
-    subtitle: "Khái lược về Triết học & cơ cấu cơ bản",
-    description: "Nhập môn về định nghĩa Triết học và hệ thống câu hỏi tối cao xoay quanh Bản thể luận và Nhận thức luận."
-  },
-  {
-    id: 2,
-    title: "Nguồn Gốc Của Triết Học",
-    subtitle: "Nguồn gốc Nhận thức và Nguồn gốc Xã hội",
-    description: "Hai điều kiện tiên quyết tích lũy suốt chiều dài lịch sử nhân loại để tư duy triết học có thể cất cánh sinh ra."
-  },
-  {
-    id: 3,
-    title: "Thế Giới Quan & Hạt Nhân Lý Luận",
-    subtitle: "Các hình thái thế giới quan chủ yếu trong lịch sử",
-    description: "Vực sâu tri thức từ Thần thoại, Tôn giáo đến đỉnh cao Triết học - nơi thế giới quan trở thành hạt nhân định hình lý trí."
-  },
-  {
-    id: 4,
-    title: "Chủ Nghĩa Duy Vật (Materialism)",
-    subtitle: "Vật chất quyết định ý thức",
-    description: "Chiêm nghiệm ba dấu mốc huy hoàng: Duy vật Chất phác, Duy vật Siêu hình và Duy vật Biện chứng khoa học."
-  },
-  {
-    id: 5,
-    title: "Chủ Nghĩa Duy Tâm (Idealism)",
-    subtitle: "Ý thức quyết định vật chất",
-    description: "Phân biệt rạch ròi giữa thế giới chủ quan của tri giác cá nhân và lực lượng tinh thần tối cao khách quan."
-  },
-  {
-    id: 6,
-    title: "Khả Tri Luận & Bất Khả Tri Luận",
-    subtitle: "Con người có thể nhận thức được thế giới?",
-    description: "Cuộc viễn chinh tư tưởng giải đáp khả năng thấu suốt thực tại khách quan hay sự bất lực trước bức màn hiện ảnh."
-  },
-  {
-    id: 7,
-    title: "Biện Chứng và Siêu Hình",
-    subtitle: "Hai phương pháp tư duy đối lập nhau",
-    description: "Động hay Tĩnh, Liên hệ chuyển hóa hay Cô lập tách rời - cuộc đụng độ của phương pháp luận triết học."
-  }
+ {
+  id: 1,
+  title: "Cơ Cấu Nền Dân Chủ XHCN",
+  subtitle: "Quyền lực nhân dân và hệ thống chính trị",
+  description: "Khám phá những thành tố cốt lõi tạo nên nền dân chủ xã hội chủ nghĩa, từ nguyên tắc quyền lực thuộc về nhân dân, vai trò lãnh đạo của Đảng, chức năng quản lý của Nhà nước đến cơ chế để công dân tham gia vào quá trình xây dựng và giám sát đời sống chính trị - xã hội."
+},
+{
+  id: 2,
+  title: "Biện Chứng Dân Chủ & Pháp Luật",
+  subtitle: "Dân chủ được bảo đảm bằng pháp luật",
+  description: "Tìm hiểu mối quan hệ gắn bó giữa dân chủ và pháp luật, nơi các quyền tự do của công dân được bảo vệ bằng hệ thống pháp lý, đồng thời việc thực hiện các quyền đó phải tuân thủ pháp luật nhằm bảo đảm công bằng, ổn định và trật tự xã hội."
+},
+{
+  id: 3,
+  title: "Không Gian Mạng & Quyền Ngôn Luận",
+  subtitle: "Tự do bày tỏ ý kiến trong môi trường số",
+  description: "Phân tích cách quyền tự do ngôn luận được thực hiện trong thời đại số thông qua mạng xã hội và các nền tảng trực tuyến, đồng thời làm rõ trách nhiệm của mỗi cá nhân trong việc tôn trọng pháp luật, sự thật và quyền lợi chính đáng của người khác."
+},
+{
+  id: 4,
+  title: "Nhận Diện Thách Thức Số",
+  subtitle: "Tin giả, xuyên tạc và rủi ro trực tuyến",
+  description: "Nhận biết những thách thức nổi bật trên môi trường mạng như tin giả, thao túng thông tin, bạo lực mạng, xâm phạm quyền riêng tư và các hành vi lợi dụng tự do ngôn luận, từ đó nâng cao khả năng đánh giá và ứng xử trước các vấn đề phát sinh trong không gian số."
+},
+{
+  id: 5,
+  title: "Chân Dung Công Dân Số",
+  subtitle: "Trách nhiệm, kỹ năng và đạo đức số",
+  description: "Xây dựng hình ảnh công dân số hiện đại với kỹ năng công nghệ, tư duy phản biện, ý thức tuân thủ pháp luật và đạo đức trực tuyến, góp phần tạo nên môi trường mạng an toàn, văn minh và thúc đẩy sự phát triển tích cực của cộng đồng số."
+}
 ];
 
 export default function PhilosophicalDiagrams() {
