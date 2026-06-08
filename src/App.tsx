@@ -67,7 +67,21 @@ export default function App() {
             </div>
           </div>
         </header>
-
+{/* Artistic Woodcut Scholar's Banner */}
+        <div className="border border-[#A69076]/45 p-1 bg-[#FAF7F0] rounded-sm shadow-xs overflow-hidden relative">
+          <div className="relative h-28 md:h-36 w-full overflow-hidden">
+            <img 
+              src={athensAcademyImg} 
+              alt="The School of Athens - Ancient Philosophy meeting modern communication" 
+              className="w-full h-full object-cover filter grayscale contrast-125 opacity-75 mix-blend-multiply"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#FAF7F0]/30 to-transparent"></div>
+          </div>
+          <div className="absolute bottom-2 left-4 text-[9px] font-mono uppercase tracking-[0.2em] text-[#2A2420] bg-[#FAF7F0] px-2.5 py-0.5 border border-[#A69076]/45 rounded-sm shadow-xs font-bold">
+            Hiến định Học đường &bull; Khảo cứu Biện chứng Dân chủ số
+          </div>
+        </div>
         {/* Dispatch Scroll (Philosophical dynamic banner note) */}
         <AnimatePresence>
           {notification && (
