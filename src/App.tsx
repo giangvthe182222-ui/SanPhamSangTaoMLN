@@ -159,12 +159,7 @@ export default function App() {
                 className="space-y-4"
               >
                 {/* Embedded Scholarly Introduction Badge in Elegant Editorial cream background */}
-                <div className="bg-white/40 border-2 border-dotted border-[#A69076] rounded-sm p-4 text-xs flex gap-3 text-[#2A2420] shadow-sm">
-                  <AlertCircle className="w-5 h-5 text-[#A69076] shrink-0" />
-                  <p className="leading-relaxed font-serif">
-                    <strong>HỒ SƠ GHI ÂM THUYẾT TRÌNH (60 PHÚT):</strong> Khung hiển thị dưới đây ghi lại đầy đủ bản thảo hoàn chỉnh với độ dài lý luận chuyên sâu cho 10 người trình bày. Nhấn nút <strong>"THUYẾT TRÌNH TỰ ĐỘNG"</strong> để trải nghiệm trình diễn liên tục như một cuộc họp học thuật chân thực.
-                  </p>
-                </div>
+                
 
                 <ManuscriptReader
                   onSelectConcept={handleSelectConcept}
